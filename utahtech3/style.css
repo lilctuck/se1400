@@ -11,7 +11,7 @@ header
 header h1
     {line-height:140%;
      padding: 0.5rem;
-     background:url(utahtechlogo.svg) no-repeat;
+     background:url(images/utahtechlogo.svg) no-repeat;
      background-position: right;
      padding-left: 1em;
      background-origin:content-box;
@@ -53,16 +53,16 @@ main
      padding-right:2rem;}
 #homehero
     {height:300px;
-     background:url(homehero.jpg) no-repeat;
+     background:url(images/homehero.jpg) no-repeat;
      background-size: cover;
     background-position:center}
 #studenthero
     {height:300px;
-     background:url(studenthero.jpg) no-repeat;
+     background:url(images/studenthero.jpg) no-repeat;
      background-size: cover;
     background-position:center}
 #facultyhero
     {height:300px;
-     background:url(facultyhero.jpg) no-repeat;
+     background:url(images/facultyhero.jpg) no-repeat;
      background-size: cover;
     background-position:center}
