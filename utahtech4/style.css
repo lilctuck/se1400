@@ -37,7 +37,7 @@ nav a
 nav a:hover
     {background-color:#BA1C21}
 
-     nav ul
+nav ul
     {margin:0px;
      padding:0px;
      display:flex;
