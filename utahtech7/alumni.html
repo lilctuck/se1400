@@ -27,17 +27,17 @@
     <h3>Request Alumni Newsletter</h3>
     <p>Required information is marked with an asterisk (*).</p>
     <form method="post" action="https://kearl.net/se1400/mail.php">
-      <label>* First Name</label>
-      <input name="myFName" required>
-      <label>* Last Name</label>
-      <input name="myLName" required>
-      <label>* Email:</label>
-      <input name="myEmail" required type="email">
-      <label>Phone:</label>
-      <input name="myPhone" type="tel">
-      <label>Graduation Date</label>
-      <input type="date">
-      <label>* Comments:</label>
+      <label for="myFName">* First Name</label>
+      <input id="myFName" name="myFName" required>
+      <label for="myLName">* Last Name</label>
+      <input id="myLName" name="myLName" required>
+      <label for="myEmail">* Email:</label>
+      <input id="myEmail" name="myEmail" required type="email">
+      <label for="myPhone">Phone:</label>
+      <input id="myPhone" name="myPhone" type="tel">
+      <label for="GraduationDate">Graduation Date</label>
+      <input id="GraduationDate" type="date">
+      <label for="mySubmit">* Comments:</label>
       <textarea name="myComments" rows="2" cols="20" required></textarea>
       <input id="mySubmit" type="submit">
     </form>
