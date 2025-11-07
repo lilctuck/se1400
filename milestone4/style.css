@@ -41,15 +41,21 @@ footer
      grid-row:6/7;
      grid-column:1/-1;
      height:90px}
-header h1
-    {font-size:45px;
-     padding-left:20px;
-     margin-top:15px;
-     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-     position:absolute;;
-    }
-img
-    {width: 150px;
-     height: 150px;
-     
-    }
+
+header h1{
+    font-size:45px;
+    padding-left:20px;
+    margin-top:15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo{
+    width: 13%;
+    height: 13%;
+    padding-left:20px;
+    padding-top:5px;
+}
+.flex-header-items{
+    display:flex;
+    float:left;
+}
+
