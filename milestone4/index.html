@@ -13,12 +13,12 @@
     <div id="margin-left"></div>
     <div id="margin-right"></div>
     <header>
-      <div class="flex-items">
+      <div class="logotitle">
         <h1>BogeyBreaker</h1>
         <img class="logo" src="imagesformile/logo.png" alt="Bogey Breaker Logo">
+      </div>
         <button id="downloadbutton"></button>
         <button id="menubutton"></button>
-      </div>
     </header>
     <div id="home-image"></div>
     <div id="empty"></div>
@@ -42,17 +42,29 @@
     </article>
     <section id="subs">
       <h2>Subscriptions</h2>
-      <div id="weekly" class="sub1">$18</div>
-      <h3 class="sub1">Weekly</h3>
-      <div id="monthly" class="sub2">$60</div>
-      <h3 class="sub2">Monthly</h3>
-      <div id="yearly" class="sub3">$400</div>
-      <h3 class="sub3">Yearly</h3>
+      <div class="subscriptions">
+        <div class="subscription-boxes" id="first-sub-box">
+          <h3>1-Week Subscription</h3>
+          <button class="cost-amounts">$2.99<span class="smaller-text">/week</span></button>
+        </div>
+        <div class="subscription-boxes" id="second-sub-box">
+          <h3>1-Month Subscription</h3>
+          <button class="cost-amounts">$6.99<span class="smaller-text">/month</span></button>
+        </div>
+        <div class="subscription-boxes" id="third-sub-box">
+          <p id="blue-box">Most Popular</p>
+          <h3>Yearly Subscription</h3>
+          <p>$59.99<span class="smaller-text">/year</span></p>
+          <button class="cost-amounts" id="yearly-cost">$4.99<span class="smaller-text">/month</span></button>
+        </div>
+      </div>
     </section>
     <footer>
-        <button id="insta"></button>
-        <button id="facebook"></button>
-        <button id="twitter"></button>
+        <div id="socials">
+          <button id="insta"></button>
+          <button id="facebook"></button>
+          <button id="twitter"></button>
+        </div>
         <p>2025 Copyright &copy; All Rights Reserved</p>
     </footer>
   </div>
