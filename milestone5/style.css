@@ -44,7 +44,7 @@ header {
 #first-article {
     grid-row: 4/5;
     grid-column: 1/-1;
-    height: 600px;
+    height: auto;
     display:grid;
     grid-template-columns: 1fr 525px 525px 1fr;
     grid-template-rows: 50px 1fr 50px 1fr;
@@ -95,15 +95,6 @@ header h1 {
     border: none;
     cursor: pointer;
     margin-right:15px;
-}
-
-#downloadbutton {
-    background: url(imagesformile/downloadbutton.png) no-repeat;
-    background-size: contain;
-    width: 200px;
-    height: 50px;
-    border: none;
-    cursor: pointer;
 }
 #first-features{
     grid-column:2/3;
@@ -160,7 +151,7 @@ body{
     justify-content: space-between;
     text-align:center;
     font-weight:bold;
-    width:100%;
+    width:99%;
     font-size:20px;
 }
 .smaller-text{
@@ -213,21 +204,132 @@ footer button{
 }
 #insta{
     background:url(imagesformile/insta-logo.png) no-repeat;
-    background-size:cover;;
+    background-size:cover;
+    font-size:0px; 
 }
 #facebook{
     background:url(imagesformile/facebook-logo.png) no-repeat;
     background-size:cover;
-    padding-left:10px;
+    font-size:0px; 
 }
 #twitter{
     background:url(imagesformile/x-logo.png) no-repeat;
     background-size:cover;
-    padding-left:10px;
+    font-size:0px; 
 }
-#socials{
+.socials{
     margin-left:15px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:200px;
 }
 footer p{
     margin-right:15px;
+}
+@media only screen and (max-width: 1100px) {
+    #first-article{
+        height:auto;
+        grid-template-columns:1fr;
+        grid-template-rows: auto;
+    }
+}
+@media only screen and (max-width:950px) {
+    #subs{
+        height:auto;
+        margin-bottom:64px;
+    }
+    .subscriptions{
+        flex-direction:column;
+    }
+    #second-sub-box, #third-sub-box{
+        margin-top:40px
+    }
+}
+@media only screen and (max-width:850px) {
+    #home-image{
+        height: 225px
+    }
+}
+@media only screen and (max-width:700px) {
+    #first-article{
+        grid-template-columns:1fr;
+        grid-template-rows:auto;
+    }
+    #first-features{
+        grid-row:1/2;
+        grid-column:1/-1;
+    }
+    #first-image{
+        grid-row:2/3;
+        grid-column:1/-1;
+    }
+    #first-para{
+        grid-row:3/4;
+        grid-column:1/-1;
+    }
+    #second-features{
+        grid-row:4/5;
+        grid-column:1/-1;
+    }
+    #second-image{
+        grid-row:5/6;
+        grid-column:1/-1;
+    }
+    #second-para{
+        grid-row:6/7;
+        grid-column:1/-1;
+    }
+}
+@media only screen and (max-width:550px) {
+    #insta, #facebook, #twitter{
+        background-image: none;
+        height:auto;
+        width:81px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border:2px solid #444444;
+        border-radius:10px;
+        font-weight: bold;
+        font-size:12px
+    }
+    #insta, #facebook{
+        margin-bottom:3px
+    }
+    #insta{
+        background-image:linear-gradient(50deg, #f58529, #feda77, #dd2a7b, #8134af, #515bd4);
+        color:black
+    }
+    #facebook{
+        background-color:#4267b3;
+        color:white
+    }
+    #twitter{
+        background-color:black;
+        color:white;
+
+    }
+    .socials{
+        flex-direction:column;
+        width:auto;
+    }
+    footer{
+        height:100px
+    }
+    .logo{
+        display:none
+    }
+}
+@media only screen and (max-width:500px){
+    header h1{
+        font-size: 40px;
+    }
+    footer p{
+        font-size:10px;
+    }
+    #home-image{
+        height:180px;
+    }
+    #empty{
+        height:30px;
+    }
 }
