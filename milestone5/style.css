@@ -189,6 +189,7 @@ body{
     padding-right:30px;
     cursor:pointer;
     transition:transform .3s;
+    text-decoration:none;
 }
 .cost-amounts:hover{
     transform:scale(1.15);
