@@ -225,11 +225,11 @@ body{
     display:flex;
     align-items:flex-end;
 }
-.align-right button, .align-left button{
+.align-right a, .align-left a{
     width:fit-content;
     margin-top:5px;
     width:150px;
-    height:50px;
+    height:40px;
     border-radius:30px;
     background-color:#ddc78b;
     border:none;
@@ -237,9 +237,13 @@ body{
     color:white;
     font-weight:bold;
     cursor: pointer;
-    transition:transform .3s
+    transition:transform .3s;
+    display:inline-block;
+    text-decoration:none;
+    text-align:center;
+    padding-top:10px
 }
-.align-right button:hover, .align-left button:hover{
+.align-right a:hover, .align-left a:hover{
     transform:scale(.95);
 }
 .index-rows h2{
@@ -402,7 +406,11 @@ table tr:nth-of-type(odd) {
     background-color:#ddc78b;
     font-size:18px;
     border-radius:5px;
-    cursor:pointer
+    cursor:pointer;
+    text-decoration: none;
+    color:white;
+    padding:4px;
+    text-align:center;
 }
 .btn:hover{
     background-color:#c7b37d
@@ -445,13 +453,19 @@ table tr:nth-of-type(odd) {
 #courses-main div:nth-of-type(odd) {
     background: #eeeeee
 }
-#courses-main div button{
+#courses-main div a{
     font-size:17px;
     background-color:#ddc78b;
     border:none;
     cursor:pointer;
     height:28px;
     border-radius: 5px;
+    text-decoration:none;
+    color:white;
+    width:fit-content;
+    padding-left:4px;
+    padding-right: 4px;
+    padding-top:3px;
 }
 
 
@@ -578,7 +592,7 @@ table tr:nth-of-type(odd) {
         width:auto
     }
     .btn{
-        margin-left:135px
+        margin-left:155px
     }
 }
 @media only screen and (max-width: 590px){
