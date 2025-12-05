@@ -64,7 +64,8 @@ footer {
 header img {
     height:80%;
     margin-left:55px;
-    margin-top:10px
+    margin-top:10px;
+    width:auto
 }
 nav{
     display:flex;
@@ -663,6 +664,9 @@ tr:hover{
     #about-content{
         grid-template-columns:1fr
     }
+        header img{
+        margin-left:20px
+    }
 }
 @media only screen and (max-width: 550px) {
     #insta, #facebook, #twitter{
@@ -777,9 +781,6 @@ tr:hover{
     }
     #title-desc h4{
         font-size:20px
-    }
-    header img{
-        margin-left:20px
     }
     td, th {
     padding: 12px;
