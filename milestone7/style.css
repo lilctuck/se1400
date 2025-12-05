@@ -219,7 +219,6 @@ body{
     width:auto;
     margin-right:50px;
     margin-left:50px;
-    width:450px
 }
 .align-right{
     display:flex;
@@ -563,6 +562,15 @@ tr:hover{
         flex-direction:column;
     }
 }
+@media only screen and (max-width: 1230px){
+    #tour-header:hover, #plat-header:hover, #gold-header:hover, #free-header:hover{
+        transform:scale(1)
+    }
+    tr:hover{
+        width:auto;
+        transform:scale(1)
+    }
+}
 @media only screen and (max-width: 1050px){
     #courses-main img{
         width:100%
@@ -620,6 +628,11 @@ tr:hover{
         margin-left:155px
     }
 }
+@media only screen and (max-width: 620px){
+    .member-table h1{
+        font-size:8vw
+    }
+}
 @media only screen and (max-width: 590px){
     #shopping img{
         width:300px
@@ -651,7 +664,7 @@ tr:hover{
         grid-template-columns:1fr
     }
 }
-@media only screen and (max-width:550px) {
+@media only screen and (max-width: 550px) {
     #insta, #facebook, #twitter{
         background-image: none;
         height:auto;
@@ -690,7 +703,21 @@ tr:hover{
         display:none
     }
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width: 525px){
+    #first-line-name{
+        font-size:75px;
+        height:75px;
+    }
+    #second-line-name{
+        font-size:75px;
+        height:75px;
+    }
+    #title-desc h4{
+        font-size:30px
+    }
+
+}
+@media only screen and (max-width: 500px){
     header h1{
         font-size: 40px;
     }
@@ -703,4 +730,59 @@ tr:hover{
     table{
         font-size:10px
     }
+    .align-right, .align-left{
+        align-items:center
+    }
+    .index-rows h2, .index-rows p{
+        text-align:center
+    }
+}
+@media only screen and (max-width: 470px){
+    .index-rows h2{
+        font-size:30px;
+    }
+    .index-rows p{
+        font-size:20px;
+    }
+    #download-items{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        margin-top:50px
+    }
+    #download-google{
+        margin-top:10px;
+        transform: translateX(-8px);
+    }
+}
+@media only screen and (max-width: 450px){
+    .login-form{
+        width:100%
+    }
+    form{
+        width:100%
+    }
+    .input-box{
+        width:100%
+    }
+}
+@media only screen and (max-width: 370px){
+    #first-line-name{
+        font-size:60px;
+        height:60px;
+    }
+    #second-line-name{
+        font-size:60px;
+        height:60px;
+    }
+    #title-desc h4{
+        font-size:20px
+    }
+    header img{
+        margin-left:20px
+    }
+    td, th {
+    padding: 12px;
+    }
+
 }
